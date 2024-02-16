@@ -33,7 +33,7 @@ async def helpyins(event):
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
-            await eor(event, f"{CMD_HELP[args]}\n\n© AyiinChats")
+            await eor(event, f"{CMD_HELP[args]}\n\n© @TatsuyaMusicStream")
         else:
             await eod(
                 event,
