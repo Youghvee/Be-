@@ -57,7 +57,7 @@ async def _(ping):
     await Ayiin.edit("**ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ**")
     await Ayiin.edit("**sᴛᴀʀᴛɪɴɢ...**")
     end = datetime.now()
-    duration = (end - start).microseconds / 1000
+    duration = (end - start).microseconds / 10000
     user = await ping.client.get_me()
     await Ayiin.edit("⚡")
     sleep(2)
@@ -78,7 +78,7 @@ async def _(ping):
     start = datetime.now()
     xping = await edit_or_reply(ping, "`Pinging....`")
     end = datetime.now()
-    duration = (end - start).microseconds / 1000
+    duration = (end - start).microseconds / 10000
     await xping.edit(
         f"**SEPONG!! 👅**\n**➻ Pinger** : %sms\n**➻ Bot Uptime** : {uptime}" % (duration)
     )
@@ -94,7 +94,7 @@ async def _(ping):
     await lping.edit("**ᴋᴇɴᴄɪɴɢ**")
     await lping.edit("**sᴇᴘᴏɴɢɪɴ ᴅᴏɴɢ**")
     end = datetime.now()
-    duration = (end - start).microseconds / 1000
+    duration = (end - start).microseconds / 10000
     user = await ping.client.get_me()
     await lping.edit(
         f"➻ **Ping !!** "
@@ -114,7 +114,7 @@ async def _(pong):
     await kopong.edit("**𝐏𝐄𝐂𝐀𝐇𝐊𝐀𝐍 𝐁𝐈𝐉𝐈 𝐊𝐀𝐔 𝐀𝐒𝐔**")
     await kopong.edit("**𝐒𝐈𝐀𝐏 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 𝐌𝐄𝐍𝐔𝐌𝐁𝐔𝐊 𝐀𝐒𝐔**")
     end = datetime.now()
-    duration = (end - start).microseconds / 1000
+    duration = (end - start).microseconds / 10000
     user = await pong.client.get_me()
     await kopong.edit(
         f"**⎋ 𝙺𝙾𝙽𝚃𝙾𝙻 𝙼𝙴𝙻𝙴𝙳𝚄𝙶** "
@@ -152,7 +152,7 @@ async def _(pong):
     await kping.edit("**CROOTTTT**")
     await kping.edit("**CROOTTTT AAAHHH.....**")
     end = datetime.now()
-    duration = (end - start).microseconds / 1000
+    duration = (end - start).microseconds / 10000
     await kping.edit("🥵")
     sleep(3)
     await kping.edit(
@@ -197,10 +197,10 @@ async def _(pong):
     xx = await edit_or_reply(pong, "`Sepong`")
     await xx.edit("Sepong Sayang.....")
     end = datetime.now()
-    duration = (end - start).microseconds / 9000
+    duration = (end - start).microseconds / 10000
     await xx.edit("🥵")
     sleep(3)
-    await xx.edit("**𝙿𝙸𝙽𝙶!**\n`%sms`" % (duration))
+    await xx.edit("**ᴀʜ ᴊᴀᴅɪ ᴀɴɢᴇᴇᴇ**\n`%sms`" % (duration))
 
 
 CMD_HELP.update(
