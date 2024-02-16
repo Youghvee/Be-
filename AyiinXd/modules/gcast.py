@@ -36,7 +36,7 @@ async def gcast(event):
         msg = reply.text
     else:
         return await eod(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await eor(event, "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Saya...`")
+    kk = await eor(event, "`Sabar Lagi Ngirim Ini Babi... Kalo Limit Jangan Nyalahin Gua...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -54,7 +54,7 @@ async def gcast(event):
                 except BaseException:
                     er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** {done} **Grup Tod.**\n**Sorry Tod Gagal Mengirim Pesan Ke** {er} **Grup.**"
+        f"**Nih Dah Gua Kirim Ke** {done} **Grup Tod.**\n**Sorry Tod Gagal Mengirim Pesan Ke** {er} **Grup.**"
     )
 
 
@@ -67,7 +67,7 @@ async def gucast(event):
         msg = reply.text
     else:
         return await eod(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await eor(event, "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Saya...`")
+    kk = await eor(event, "`Sabar Nih Lagi Gua Kirim Babi... Kalo Limit Jangan Nyalahin Gua...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -85,7 +85,7 @@ async def gucast(event):
                 except BaseException:
                     er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** {done} **Chat Tod.**\n**Sorry Tod Gagal Mengirim Pesan Ke** {er} **Chat.**"
+        f"**Nih Dah Gua Kirim Ke** {done} **Chat Tod.**\n**Sorry Tod Gagal Mengirim Pesan Ke** {er} **Chat.**"
     )
 
 
@@ -115,7 +115,7 @@ Ketik `{cmd}addblacklist` di grup yang ingin anda tambahkan ke daftar blacklist 
 async def add(event):
     me = await event.client.get_me()
     BLACKLIST_GCAST = AyiinChanger(cek_gcast(me.id))
-    xxnx = await eor(event, '**Memproses...**')
+    xxnx = await eor(event, '**Oke Tot Bentar...**')
     if event.chat_id in BLACKLIST_GCAST:
         await eod(
             event,
@@ -125,19 +125,19 @@ async def add(event):
     else:
         add_gcast(me.id, event.chat_id)
         await xxnx.edit(
-            f"**Berhasil Menambahkan** `{event.chat_id}` **ke daftar blacklist gcast.**"
+            f"**Dah Gua Tambahin** `{event.chat_id}` **ke daftar blacklist gcast.**"
         )
 
 
 @ayiin_cmd(pattern="delblacklist(?:\\s|$)([\\s\\S]*)")
 async def _(event):
-    xxx = await eor(event, '**Memproses...**')
+    xxx = await eor(event, '**Oke Tot Bentar...**')
     me = await event.client.get_me()
     BLACKLIST_GCAST = AyiinChanger(cek_gcast(me.id))
     gc = event.chat_id
     if gc in BLACKLIST_GCAST:
         del_gcast(me.id, gc)
-        await xxx.edit(f"**Berhasil Menghapus** `{gc}` **dari daftar blacklist gcast.**"
+        await xxx.edit(f"**Dah Gua Hapus** `{gc}` **dari daftar blacklist gcast.**"
         )
     else:
         await eod(
