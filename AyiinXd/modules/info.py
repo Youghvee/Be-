@@ -23,7 +23,7 @@ from . import cmd, var
 @ayiin_cmd(pattern="info(?: |$)(.*)")
 async def who(event):
 
-    await event.edit("`Menganalisa...`")
+    await event.edit("`Bentar Ya Jing Gua Cek Dulu...`")
 
     if not os.path.isdir(var.TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(var.TEMP_DOWNLOAD_DIRECTORY)
@@ -34,7 +34,7 @@ async def who(event):
         photo, caption = await fetch_info(replied_user, event)
     except AttributeError:
         return event.edit(
-            "`Maaf Komandan Saya Tidak Mendapatkan Informasi Apapun...`"
+            "`Duh Tot Nih Bocah Siapa Ya Kok Gua Ga Tau Dia Siapa...`"
         )
 
     message_id_to_reply = event.message.reply_to_msg_id
@@ -136,19 +136,10 @@ async def fetch_info(replied_user, event):
     username = "@{}".format(username) if username else "-"
     user_bio = "-" if not user_bio else user_bio
 
-    caption = "<b>𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚂𝙸 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰</b>\n\n"
-    caption += f"𝙽𝙰𝙼𝙰 𝙳𝙴𝙿𝙰𝙽 : {first_name}\n"
-    caption += f"𝙽𝙰𝙼𝙰 𝙱𝙴𝙻𝙰𝙺𝙰𝙽𝙶 : {last_name}\n"
-    caption += f"𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 : {username}\n"
-    caption += f"𝙳𝙰𝚃𝙰 𝙲𝙴𝙽𝚃𝚁𝙴 𝙸𝙳 : {dc_id}\n"
-    caption += f"𝚃𝙾𝚃𝙰𝙻 𝙵𝙾𝚃𝙾 𝙿𝚁𝙾𝙵𝙸𝙻 : {replied_user_profile_photos_count}\n"
-    caption += f"𝙰𝙿𝙰𝙺𝙰𝙷 𝙱𝙾𝚃 : {is_bot}\n"
-    caption += f"𝙳𝙸𝙱𝙰𝚃𝙰𝚂𝙸 : {restricted}\n"
-    caption += f"𝙳𝙸𝚅𝙴𝚁𝙸𝙵𝙸𝙺𝙰𝚂𝙸 𝙾𝙻𝙴𝙷 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 : {verified}\n"
-    caption += f"𝙸𝙳 : <code>{user_id}</code>\n\n"
-    caption += f"𝙱𝙸𝙾 : \n<code>{user_bio}</code>\n\n"
-    caption += f"𝙾𝙱𝚁𝙾𝙻𝙰𝙽 𝚄𝙼𝚄𝙼 𝙳𝙴𝙽𝙶𝙰𝙽 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝙸𝙽𝙸 : {common_chat}\n"
-    caption += f"𝙻𝙸𝙽𝙺 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽 𝙺𝙴 𝙿𝚁𝙾𝙵𝙸𝙻 : "
+    caption = "<b>▢ ɪɴғᴏ ᴘᴇɴɢɢᴜɴᴀ</b>\n\n"
+    caption += f"⊳ ɴᴀᴍᴀ ᴅᴇᴘᴀɴ: {first_name}\n"
+    caption += f"⊳ ᴜsᴇʀɴᴀᴍᴇ : {username}\n"
+    caption += f"⊳ ɪᴅ ʟᴜ ʙᴇʀᴀᴘᴀ sɪ ᴊɪɴɢ : <code>{user_id}</code>\n\n"
     caption += f"<a href=\"tg://user?id={user_id}\">{first_name}</a>"
 
     return photo, caption
