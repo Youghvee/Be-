@@ -119,7 +119,7 @@ async def update_restart_msg(chat_id, msg_id):
     from config import var
 
     message = (
-        f"**Ayiin-UserBot v`{var.BOT_VER}` is back up and running!**\n\n"
+        f"**Kenn-UserBot v`{var.BOT_VER}` is back up and running!**\n\n"
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
@@ -159,13 +159,13 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "⪻", data="{}_prev({})".format(prefix, modulo_page)
+                    "⊲", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "⪼ ʙᴀᴄᴋ ⪻", data="{}_close({})".format(prefix, modulo_page)
+                    "⎋ ʙᴀᴄᴋ ⎋", data="{}_close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "⪼", data="{}_next({})".format(prefix, modulo_page)
+                    "⊳", data="{}_next({})".format(prefix, modulo_page)
                 ),
             )
         ]
