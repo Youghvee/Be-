@@ -46,7 +46,7 @@ async def inline_handler(event):
         result = await event.builder.photo(
             file=logoyins,
             link_preview=False,
-            text=f"**🤴 ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ 🤴**\n\n▢ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n **🤴 ᴏᴡɴᴇʀ :** {user.first_name}\n **ᴊᴜᴍʟᴀʜ :** {len(CMD_HELP)} **Modules**",
+            text=f"**🤴 ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ 🤴**\n\n➻ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n **🤴 ᴏᴡɴᴇʀ :** {user.first_name}\n➻ **ᴊᴜᴍʟᴀʜ :** {len(CMD_HELP)} **Modules**",
             buttons=main_help_button,
         )
     elif query.startswith("repo"):
@@ -59,7 +59,7 @@ async def inline_handler(event):
                 0,
                 "image/jpeg",
                 []),
-            text="**Kenn-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [Founder](https://t.me/kennxhh)\n✧ **sᴜᴘᴘᴏʀᴛ :** @TatsuyaMusicStream\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+            text="**Kenn-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n➻  **ʀᴇᴘᴏ :** [Founder](https://t.me/kennxhh)\n➻ **sᴜᴘᴘᴏʀᴛ :** @TatsuyaMusicStream\n➻ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
@@ -114,7 +114,7 @@ async def inline_handler(event):
                 0,
                 "image/jpeg",
                 []),
-            text=f"**Kenn-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **🤴 ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {var.BOT_USERNAME}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @TatsuyaMusicStream\n➖➖➖➖➖➖➖➖➖➖",
+            text=f"**Kenn-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n➻ **🤴 ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n➻ **ᴀssɪsᴛᴀɴᴛ:** {var.BOT_USERNAME}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @TatsuyaMusicStream\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
