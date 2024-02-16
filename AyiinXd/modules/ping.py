@@ -51,11 +51,11 @@ async def get_readable_time(seconds: int) -> str:
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    Ayiin = await edit_or_reply(ping, "**✧**")
-    await Ayiin.edit("**✧✧**")
-    await Ayiin.edit("**✧✧✧**")
-    await Ayiin.edit("**✧✧✧✧**")
-    await Ayiin.edit("**✧✧✧✧✧**")
+    Ayiin = await edit_or_reply(ping, "**ᴘ**")
+    await Ayiin.edit("**ʜᴀɪ 👋🏻**")
+    await Ayiin.edit("**ᴋᴀᴍᴜ**")
+    await Ayiin.edit("**ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ**")
+    await Ayiin.edit("**sᴛᴀʀᴛɪɴɢ...**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
@@ -63,11 +63,11 @@ async def _(ping):
     sleep(3)
     await Ayiin.edit(
         f"""
-**✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**
+**✧ ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ✧**
 
-✧ **ᴘɪɴɢ :** `{duration}ms`
-✧ **ᴜᴘᴛɪᴍᴇ :** `{uptime}`
-✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})
+➻ **🏓 ᴘɪɴɢ :** `{duration}ms`
+➻ **⏳ ᴜᴘᴛɪᴍᴇ :** `{uptime}`
+➻ **🤴 ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})
 """
     )
 
@@ -80,7 +80,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xping.edit(
-        f"**PONG!! 🍭**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**SEPONG!! 👅**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}⏰" % (duration)
     )
 
 
@@ -88,20 +88,20 @@ async def _(ping):
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    lping = await edit_or_reply(ping, "**★ PING ★**")
-    await lping.edit("**★★ PING ★★**")
-    await lping.edit("**★★★ PING ★★★**")
-    await lping.edit("**★★★★ PING ★★★★**")
-    await lping.edit("**✦҈͜͡➳ PONG!**")
+    lping = await edit_or_reply(ping, "**ᴡᴏɪ**")
+    await lping.edit("**ᴛᴜɴɢɢᴜ**")
+    await lping.edit("**ʟᴀɢɪ**")
+    await lping.edit("**ᴋᴇɴᴄɪɴɢ**")
+    await lping.edit("**sᴇᴘᴏɴɢɪɴ ᴅᴏɴɢ**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await lping.edit(
-        f"❃ **Ping !!** "
+        f"➻ **Ping !!** "
         f"`%sms` \n"
-        f"❃ **Uptime -** "
+        f"➻ **Uptime -** "
         f"`{uptime}` \n"
-        f"**✦҈͜͡➳ Master :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**➻ Master :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
@@ -109,18 +109,18 @@ async def _(ping):
 async def _(pong):
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    kopong = await edit_or_reply(pong, "**『⍟𝐊𝐎𝐍𝐓𝐎𝐋』**")
-    await kopong.edit("**◆◈𝐊𝐀𝐌𝐏𝐀𝐍𝐆◈◆**")
+    kopong = await edit_or_reply(pong, "**『𝐊𝐎𝐍𝐓𝐎𝐋』**")
+    await kopong.edit("**𝐊𝐀𝐌𝐏𝐀𝐍𝐆**")
     await kopong.edit("**𝐏𝐄𝐂𝐀𝐇𝐊𝐀𝐍 𝐁𝐈𝐉𝐈 𝐊𝐀𝐔 𝐀𝐒𝐔**")
-    await kopong.edit("**☬𝐒𝐈𝐀𝐏 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 𝐌𝐄𝐍𝐔𝐌𝐁𝐔𝐊 𝐀𝐒𝐔☬**")
+    await kopong.edit("**𝐒𝐈𝐀𝐏 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 𝐌𝐄𝐍𝐔𝐌𝐁𝐔𝐊 𝐀𝐒𝐔**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await kopong.edit(
-        f"**✲ 𝙺𝙾𝙽𝚃𝙾𝙻 𝙼𝙴𝙻𝙴𝙳𝚄𝙶** "
-        f"\n ⫸ 𝙺𝙾𝙽𝚃𝙾𝙻 `%sms` \n"
-        f"**✲ 𝙱𝙸𝙹𝙸 𝙿𝙴𝙻𝙴𝚁** "
-        f"\n ⫸ 𝙺𝙰𝙼𝙿𝙰𝙽𝙶『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
+        f"**⎋ 𝙺𝙾𝙽𝚃𝙾𝙻 𝙼𝙴𝙻𝙴𝙳𝚄𝙶** "
+        f"\n ⎋ 𝙺𝙾𝙽𝚃𝙾𝙻 `%sms` \n"
+        f"**⎋ 𝙱𝙸𝙹𝙸 𝙿𝙴𝙻𝙴𝚁** "
+        f"\n ⎋ 𝙺𝙰𝙼𝙿𝙰𝙽𝙶『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
     )
 
 
