@@ -26,7 +26,7 @@ async def _(event):
     if not input_str and not reply_message:
         await eod(
             event,
-            "**Maaf Pengguna Tidak Ditemukan.**",
+            "**Si Babi Ga Ada.**",
             time=90
         )
     user, rank = await get_user_from_event(event, secondgroup=True)
@@ -34,7 +34,7 @@ async def _(event):
         return
     uid = user.id
     chat = "@SangMata_BOT"
-    yinsevent = await eor(event, "**Memproses....**")
+    yinsevent = await eor(event, "**Bentar Jing Gua Cek Dulu....**")
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message(f"{uid}")
@@ -50,9 +50,9 @@ async def _(event):
             responses.append(response.text)
         await event.client.send_read_acknowledge(conv.chat_id)
     if not responses:
-        await eod(yinsevent, "**Orang Ini Belum Pernah Mengganti Namanya**", time=90)
+        await eod(yinsevent, "**Si Kontol Ga Pernah Ganti Nama**", time=90)
     if "No records found" in responses:
-        await eod(yinsevent, "**Orang Ini Belum Pernah Mengganti Namanya**", time=90)
+        await eod(yinsevent, "**Si Kontol Ga Pernah Ganti Nama**", time=90)
     names, usernames = await sangmata_seperator(responses)
     cmd = event.pattern_match.group(1)
     ayiin = None
