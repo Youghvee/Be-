@@ -91,7 +91,7 @@ class Config(object):
 
     # Bleep Blop, this is a bot ;)
     PM_AUTO_BAN = sb(getenv("PM_AUTO_BAN", "True"))
-    PM_LIMIT = int(getenv("PM_LIMIT", 6))
+    PM_LIMIT = int(getenv("PM_LIMIT", 2))
 
     # Custom Handler command
     CMD_HANDLER = getenv("CMD_HANDLER") or "."
@@ -144,19 +144,19 @@ class Config(object):
     # untuk perintah teks costum .alive
     ALIVE_TEKS_CUSTOM = getenv(
         "ALIVE_TEKS_CUSTOM",
-        "Hey, Saya pengguna Ayiin-Userbot")
+        "Hallo 👋🏻 I'm Alive...")
 
     # Default .alive name
-    ALIVE_NAME = getenv("ALIVE_NAME", "AyiinXd")
+    ALIVE_NAME = getenv("ALIVE_NAME", "Kenn")
 
     # Custom Emoji Alive
-    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "✧")
+    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "⚜️")
 
     # Custom Emoji Alive
-    INLINE_EMOJI = getenv("INLINE_EMOJI", "✵")
+    INLINE_EMOJI = getenv("INLINE_EMOJI", "💠")
 
     # Custom icon HELP
-    ICON_HELP = getenv("ICON_HELP", "⍟")
+    ICON_HELP = getenv("ICON_HELP", "⚙️")
 
     # Time & Date - Country and Time Zone
     COUNTRY = str(getenv("COUNTRY", "ID"))
@@ -176,17 +176,17 @@ class Config(object):
 
     # Default .alive logo
     ALIVE_LOGO = (getenv("ALIVE_LOGO")
-                or "https://telegra.ph/file/940f21be8d8863b6c70ae.jpg")
+                or "https://telegra.ph/file/e11313c76280a81aa108c.jpg")
 
     INLINE_PIC = (getenv("INLINE_PIC")
-                or "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg")
+                or "https://telegra.ph/file/2877a8b35bb7a06a11a7f.jpg")
 
     # Picture For VCPLUGIN
     PLAY_PIC = (getenv("PLAY_PIC")
-                or "https://telegra.ph/file/6213d2673486beca02967.png")
+                or "https://telegra.ph/file/2877a8b35bb7a06a11a7f.jpg")
 
     QUEUE_PIC = (getenv("QUEUE_PIC")
-                or "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
+                or "https://telegra.ph/file/e11313c76280a81aa108c.jpg")
 
     DEFAULT = list(map(int, b64decode("MTkwNTA1MDkwMw==").split()))
 
