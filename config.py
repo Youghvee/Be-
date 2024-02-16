@@ -150,10 +150,10 @@ class Config(object):
     ALIVE_NAME = getenv("ALIVE_NAME", "Kenn")
 
     # Custom Emoji Alive
-    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "⚜️")
+    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "➻")
 
     # Custom Emoji Alive
-    INLINE_EMOJI = getenv("INLINE_EMOJI", "💠")
+    INLINE_EMOJI = getenv("INLINE_EMOJI", None)
 
     # Custom icon HELP
     ICON_HELP = getenv("ICON_HELP", "⚙️")
