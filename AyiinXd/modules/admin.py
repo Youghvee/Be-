@@ -207,7 +207,7 @@ async def ban(bon):
 **𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝘽𝙖𝙣𝙣𝙚𝙙 𝙐𝙨𝙚𝙧`
 **𝙍𝙚𝙖𝙨𝙤𝙣 :** `{reason}`
 **𝘽𝙖𝙣𝙣𝙚𝙙 𝘽𝙮 :** `{me.first_name}`
-**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**
+**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ⎋ ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ⎋**
 """
         )
     else:
@@ -219,7 +219,7 @@ async def ban(bon):
 **𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{str(user.id)}`
 **𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝘽𝙖𝙣𝙣𝙚𝙙 𝙐𝙨𝙚𝙧`
 **𝘽𝙖𝙣𝙣𝙚𝙙 𝘽𝙮 :** `{me.first_name}`
-**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**
+**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ⎋ ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ⎋**
 """
         )
 
@@ -280,7 +280,7 @@ async def spider(spdr):
 **𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{user.id}`
 **𝙍𝙚𝙖𝙨𝙤𝙣 :** `{reason}`
 **𝙈𝙪𝙩𝙚𝙙 𝘽𝙮 :** `{self_user.first_name}`
-**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**
+**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ⎋ ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ⎋**
 """
             )
         else:
@@ -293,7 +293,7 @@ async def spider(spdr):
 **𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{user.id}`
 **𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝙈𝙪𝙩𝙚𝙙 𝙐𝙨𝙚𝙧`
 **𝙈𝙪𝙩𝙚𝙙 𝘽𝙮 :** `{self_user.first_name}`
-**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**
+**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ⎋ ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ⎋**
 '''
             )
     except UserIdInvalidError:
@@ -487,16 +487,16 @@ async def rm_deletedacc(show):
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title or "Grup Ini"
-    mentions = f"<b>♕︎ Daftar Admin Grup {title}:</b> \n"
+    mentions = f"<b>👤 Daftar Admin Grup {title}:</b> \n"
     try:
         async for user in show.client.iter_participants(
             show.chat_id, filter=ChannelParticipantsAdmins
         ):
             if not user.deleted:
                 link = f'<a href="tg://user?id={user.id}">{user.first_name}</a>'
-                mentions += f"\n✧ {link}"
+                mentions += f"\n⎋ {link}"
             else:
-                mentions += f"\n⍟ Akun Terhapus <code>{user.id}</code>"
+                mentions += f"\n⎋ Akun Terhapus <code>{user.id}</code>"
     except ChatAdminRequiredError as err:
         mentions += f" {str(err)}" + "\n"
     await show.edit(mentions, parse_mode="html")
