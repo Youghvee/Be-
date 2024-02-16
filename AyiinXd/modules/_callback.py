@@ -46,7 +46,7 @@ async def on_plug_in_callback_query_handler(event):
     owner = user.first_name
     if event.query.user_id == uid or event.query.user_id in var.SUDO_USERS:
         buttons = paginate_help(0, dugmeler, "helpme")
-        text = f"**⚙️ ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ⚙️**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **🤴 ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+        text = f"**⚙️ ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ⚙️**\n\n➻ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n **🤴 ᴏᴡɴᴇʀ** {user.first_name}\n➻ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
         await event.edit(
             text,
             file=logoyins,
@@ -72,13 +72,13 @@ async def inline_handler(event):
         result = await event.builder.photo(
             file=logoyins,
             link_preview=False,
-            text=f"**⚙️ ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ⚙️**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **🤴 ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+            text=f"**⚙️ ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ⚙️**\n\n➻ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n **🤴 ᴏᴡɴᴇʀ :** {user.first_name}\n➻ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
             buttons=main_help_button,
         )
     elif query.startswith("repo"):
         result = builder.article(
             title="Repository",
-            description="Repository Ayiin - Userbot",
+            description="Repository Kenn - Userbot",
             url="https://t.me/AyiinChats",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
@@ -140,7 +140,7 @@ async def inline_handler(event):
                 0,
                 "image/jpeg",
                 []),
-            text=f"**Kenn-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **🤴 ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {botusername}\n➖➖➖➖➖➖➖➖➖➖\n**🗂 ᴜᴘᴅᴀᴛᴇs :** @TatsuyaMusicStream\n➖➖➖➖➖➖➖➖➖➖",
+            text=f"**Kenn-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n **🤴 ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n➻ **ᴀssɪsᴛᴀɴᴛ:** {botusername}\n➖➖➖➖➖➖➖➖➖➖\n**⚠️ ᴜᴘᴅᴀᴛᴇs :** @TatsuyaMusicStream\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
@@ -206,7 +206,7 @@ async def gback_handler(event):
     if event.query.user_id == uid or event.query.user_id in var.SUDO_USERS:  # @Ayiin-Userbot
         # https://t.me/TelethonChat/115200
         text = (
-            f"**🤴 ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ 🤴**\n\n✧ **🤴 ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+            f"**🤴 ᴋᴇɴɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ 🤴**\n\n **🤴 ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n➻ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
         await event.edit(
             text,
             file=logoyins,
@@ -221,7 +221,7 @@ async def about(event):
     owner = user.first_name
     if event.query.user_id == uid or event.query.user_id in var.SUDO_USERS:
         await event.edit(f"""
-•Menu• - Voice chat group untuk [{user.first_name}](tg://user?id={user.id})
+⊲ Menu ⊳- Voice chat group untuk [{user.first_name}](tg://user?id={user.id})
 """,
                             buttons=[
                                 [
@@ -252,29 +252,29 @@ async def on_plug_in_callback_query_handler(event):
             f"""
 ⚙️ **Perintah yang tersedia di vcplugin** ⚙️
 
-»  **Perintah : **`{cmd}play` <Judul Lagu/Link YT>
-»  **Kegunaan :** __Untuk Memutar Lagu di voice chat group dengan akun kamu.__
+•  **Perintah : **`{cmd}play` <Judul Lagu/Link YT>
+•  **Kegunaan :** __Untuk Memutar Lagu di voice chat group dengan akun kamu.__
 
-»  **Perintah : **`{cmd}vplay` <Judul Video/Link YT>
-»  **Kegunaan :** __Untuk Memutar Video di voice chat group dengan akun kamu.__
+•  **Perintah : **`{cmd}vplay` <Judul Video/Link YT>
+•  **Kegunaan :** __Untuk Memutar Video di voice chat group dengan akun kamu.__
 
-»  **Perintah : **`{cmd}end`
-»  **Kegunaan :** __Untuk Memberhentikan video/lagu yang sedang putar di voice chat group.__
+•  **Perintah : **`{cmd}end`
+•  **Kegunaan :** __Untuk Memberhentikan video/lagu yang sedang putar di voice chat group.__
 
-»  **Perintah : **`{cmd}skip`
-»  **Kegunaan :** __Untuk Melewati video/lagu yang sedang di putar.__
+•  **Perintah : **`{cmd}skip`
+•  **Kegunaan :** __Untuk Melewati video/lagu yang sedang di putar.__
 
-»  **Perintah : **`{cmd}pause`
-»  **Kegunaan :** __Untuk memberhentikan video/lagu yang sedang diputar.__
+•  **Perintah : **`{cmd}pause`
+•  **Kegunaan :** __Untuk memberhentikan video/lagu yang sedang diputar.__
 
-»  **Perintah : **`{cmd}resume`
-»  **Kegunaan :** __Untuk melanjutkan pemutaran video/lagu yang sedang diputar.__
+•  **Perintah : **`{cmd}resume`
+•  **Kegunaan :** __Untuk melanjutkan pemutaran video/lagu yang sedang diputar.__
 
-»  **Perintah : **`{cmd}volume` 1-200
-»  **Kegunaan :** __Untuk mengubah volume (Membutuhkan Hak admin).__
+•  **Perintah : **`{cmd}volume` 1-200
+•  **Kegunaan :** __Untuk mengubah volume (Membutuhkan Hak admin).__
 
-»  **Perintah : **`{cmd}playlist`
-»  **Kegunaan :** __Untuk menampilkan daftar putar Lagu/Video.__
+•  **Perintah : **`{cmd}playlist`
+•  **Kegunaan :** __Untuk menampilkan daftar putar Lagu/Video.__
 """)
         await event.edit(
             text,
@@ -300,23 +300,23 @@ async def on_plug_in_callback_query_handler(event):
             f"""
 ⚙️ **Perintah yang tersedia di vctools** ⚙️
 
-»  **Perintah : **`{cmd}startvc`
-»  **Kegunaan :** __Untuk Memulai voice chat group.__
+•  **Perintah : **`{cmd}startvc`
+•  **Kegunaan :** __Untuk Memulai voice chat group.__
 
-»  **Perintah : **`{cmd}stopvc`
-»  **Kegunaan :** __Untuk Memberhentikan voice chat group.__
+•  **Perintah : **`{cmd}stopvc`
+•  **Kegunaan :** __Untuk Memberhentikan voice chat group.__
 
-»  **Perintah :** `{cmd}joinvc`
-»  **Kegunaan :** __Untuk Bergabung ke voice chat group.__
+•  **Perintah :** `{cmd}joinvc`
+•  **Kegunaan :** __Untuk Bergabung ke voice chat group.__
 
-»  **Perintah : **`{cmd}leavevc`
-»  **Kegunaan :** __Untuk Turun dari voice chat group.__
+•  **Perintah : **`{cmd}leavevc`
+•  **Kegunaan :** __Untuk Turun dari voice chat group.__
 
-»  **Perintah : **`{cmd}vctitle` <title vcg>
-»  **Kegunaan :** __Untuk Mengubah title/judul voice chat group.__
+•  **Perintah : **`{cmd}vctitle` <title vcg>
+•  **Kegunaan :** __Untuk Mengubah title/judul voice chat group.__
 
-»  **Perintah : **`{cmd}vcinvite`
-»  **Kegunaan :** __Mengundang Member group ke voice chat group.__
+•  **Perintah : **`{cmd}vcinvite`
+•  **Kegunaan :** __Mengundang Member group ke voice chat group.__
 """)
         await event.edit(
             text,
